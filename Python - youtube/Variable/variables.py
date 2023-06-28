@@ -1,0 +1,3 @@
+nombre = "lucas"
+
+print (nombre)
