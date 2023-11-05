@@ -18,9 +18,9 @@ if connection.is_connected():
 
     # Crear y eliminar la base de datos
 cursor = connection.cursor()
-delete_database_query = "DROP DATABASE IF EXISTS LISTA DE EMPRESAS DEL  SP500"
+delete_database_query = "DROP DATABASE IF EXISTS LISTA DE EMPRESAS DEL SP500"
 cursor.execute(delete_database_query)
-create_database_query = "CREATE DATABASE LISTA DE EMPRESAS DEL  SP500"
+create_database_query = "CREATE DATABASE LISTA DE EMPRESAS DEL SP500"
 cursor.execute(create_database_query)
 cursor.close()
 
@@ -30,7 +30,7 @@ connection = mysql.connector.connect(
         port=3306,
         user='root',
         password='',
-        database='LISTA DE EMPRESAS DEL  SP500'
+        database='LISTA DE EMPRESAS DEL SP500'
     )
 if connection.is_connected():
     print("Conexión a la base de datos LISTA DE EMPRESAS DEL  SP500 correcta")
